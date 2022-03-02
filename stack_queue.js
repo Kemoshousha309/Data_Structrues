@@ -55,7 +55,7 @@ const s = new Stack();
 // it's a data structure in which the first element in should be the first out "fist in first out" (FIFO) first served first
 // uses: your turn in online game, save the order element in effective sequence ......
 
-class QUEUE {
+class Queue {
   constructor(){
     this.head = null;
     this.tail = null;
@@ -85,11 +85,17 @@ class QUEUE {
       shifted.next = null;
     }
     this.length--;
-    return shifted;
+    return shifted.value;
   }
 }
 
-const q = new QUEUE();
+const q = new Queue();
+
+module.exports = {
+  Queue,
+  Stack
+}
+
 // q.enqueue(2)
 // q.enqueue(6)
 // q.enqueue(1)
