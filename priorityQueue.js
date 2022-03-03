@@ -86,12 +86,16 @@ class PriorityQueue {
 
 
 const pq = new PriorityQueue();
-pq.enqueue("A", 2) 
-pq.enqueue("C", 4) 
-pq.enqueue("B", 6) 
-pq.enqueue("E", 1) 
-console.log(pq.dequeue())
-console.log(pq.dequeue())
-console.log(pq.dequeue())
-console.log(pq.dequeue())
-console.log(pq)
+// pq.enqueue("A", 2) 
+// pq.enqueue("C", 4) 
+// pq.enqueue("B", 6) 
+// pq.enqueue("E", 1) 
+// console.log(pq.dequeue())
+// console.log(pq.dequeue())
+// console.log(pq.dequeue())
+// console.log(pq.dequeue())
+// console.log(pq)
+
+module.exports = {
+  PriorityQueue,
+}

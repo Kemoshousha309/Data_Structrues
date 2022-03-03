@@ -27,7 +27,7 @@ class Stack {
       poped.next = null;
     }
     this.size--;
-    return poped;
+    return poped.value;
   }
 
   push(value) { 
